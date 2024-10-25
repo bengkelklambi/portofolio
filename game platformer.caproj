@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>game platformer</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="dirtHalf_mid" sid="366804693923372">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="381342760023757" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Ground\Dirt\dirtHalf_mid.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.570313" y="0.570313" />
+                            <point x="0.429688" y="0.570313" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dirtMid" sid="400513289872573">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="475019933382154">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915032905811846" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Ground\Dirt\dirtMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dirtCenter" sid="731560427399726">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="332907100657029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Ground\Dirt\dirtCenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="845489697680260">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="player" sid="113374300463503">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="637749152382174">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="762619406644084">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="842859935575844" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_walk1.png">
+                        <collision-poly>
+                            <point x="0.0917431" y="0" />
+                            <point x="0.458716" y="0" />
+                            <point x="0.889908" y="0" />
+                            <point x="0.715596" y="0.986577" />
+                            <point x="0.155963" y="0.993289" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_walk2.png">
+                        <collision-poly>
+                            <point x="0.0917431" y="0" />
+                            <point x="0.458716" y="0" />
+                            <point x="0.889908" y="0" />
+                            <point x="0.715596" y="0.986577" />
+                            <point x="0.155963" y="0.993289" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_stand.png">
+                        <collision-poly>
+                            <point x="0.0917431" y="0" />
+                            <point x="0.458716" y="0" />
+                            <point x="0.889908" y="0" />
+                            <point x="0.715596" y="0.986577" />
+                            <point x="0.155963" y="0.993289" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="235654860416190" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_jump.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_stand.png">
+                        <collision-poly>
+                            <point x="0.0917431" y="0" />
+                            <point x="0.458716" y="0" />
+                            <point x="0.889908" y="0" />
+                            <point x="0.715596" y="0.986577" />
+                            <point x="0.155963" y="0.993289" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="702251884326460">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Backgrounds\blue_desert.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="265818944417894">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Backgrounds\blue_desert.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="988441875253950">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Text" sid="930869472744840">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="hudCoin" sid="776617277775071">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713769853826850" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\HUD\hudCoin.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hudPlayer_blue" sid="206179690879279">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366736383937908" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\HUD\hudPlayer_blue.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hudKey_blue" sid="997094937376601">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981459623742422" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\HUD\hudKey_blue.png">
+                        <collision-poly>
+                            <point x="0.421875" y="0.421875" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.726563" y="0.273438" />
+                            <point x="0.804688" y="0.5" />
+                            <point x="0.585938" y="0.585938" />
+                            <point x="0.5" y="0.789063" />
+                            <point x="0.265625" y="0.734375" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="670084130804490">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="C_key" sid="589446190510232">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203152658332098" speed="5">
+                    <frame duration="1" hotspotX="0.494118" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Items\keyBlue.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.037037" />
+                            <point x="0.494118" y="0.37037" />
+                            <point x="0.576471" y="0.37037" />
+                            <point x="0.988235" y="0.5" />
+                            <point x="0.752941" y="0.907407" />
+                            <point x="0.494118" y="0.62963" />
+                            <point x="0.2" y="0.962963" />
+                            <point x="0.0235294" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="C_Gem" sid="396663325257671">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="289701885805572">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="152892041096968" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Items\gemBlue.png">
+                        <collision-poly>
+                            <point x="0.180556" y="0.04" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.819444" y="0.04" />
+                            <point x="0.986111" y="0.5" />
+                            <point x="0.708333" y="0.8" />
+                            <point x="0.5" y="0.98" />
+                            <point x="0.291667" y="0.8" />
+                            <point x="0.0138889" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P_Coin" sid="543612237061439">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Items\coinGold.png" />
+        </object-type>
+        <object-type name="P_Gem" sid="781534202372186">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Items\gemBlue.png" />
+        </object-type>
+        <object-type name="Sprite" sid="949672494838719">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="424651992319767">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="967943896423700">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="522763829693819" speed="5">
+                    <frame duration="1" hotspotX="0.495413" hotspotY="0.134228" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_stand.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_walk1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_walk2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_stand.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="100799571053410" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.167742" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_jump.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Players\128x256\Blue\alienBlue_stand.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="436741965101661">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="HP" sid="254231835356877" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="953289151522640">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102522209256995" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Tiles\boxCrate.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Tiles\boxCrate_single.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Tiles\boxCrate_double.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P_Box" sid="392618534149735">
+            <plugin id="Particles" />
+            <texture original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Particles\brickBrown.png" />
+        </object-type>
+        <object-type name="Kotak_Coin" sid="114542743262801">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="HP" sid="756999735826165" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="623145226705592">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="564383775734721" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Tiles\boxCoin_disabled_boxed.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Tiles\boxItem.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="710020746814102">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666125570480974" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Enemies\slimePurple.png">
+                        <collision-poly>
+                            <point x="0.515625" y="0.515625" />
+                            <point x="0.484375" y="0.515625" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.84375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slimePurple" sid="564370182522035">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ArahMusuh" sid="717223340501645" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="105172945536763">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="gerak" pingpong="0" repeatcount="1" repeatto="0" sid="798438506880223" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Enemies\slimePurple.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.81111" y="0" />
+                            <point x="0.811111" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Enemies\slimePurple_move.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.81111" y="0" />
+                            <point x="0.811111" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="mati" pingpong="0" repeatcount="1" repeatto="0" sid="694391128542324" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Enemies\slimePurple_hit.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.81111" y="0" />
+                            <point x="0.811111" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Spawn_Coin1" sid="436445404807461">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389214446610090" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Items\coinGold.png">
+                        <collision-poly>
+                            <point x="0.320313" y="0.320313" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.679688" y="0.679688" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.320313" y="0.679688" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="348058720547592">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="609913253177174">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563352308625943" speed="5">
+                    <frame duration="1" hotspotX="1.42857" hotspotY="0.0531915" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="C_Coin" sid="553416720966635">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="971346579088311">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165770292776926" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\kenney_platformer-pack-redux (1)\PNG\Items\coinGold.png">
+                        <collision-poly>
+                            <point x="0.151515" y="0.151515" />
+                            <point x="0.5" y="0.0151515" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="0.984848" y="0.5" />
+                            <point x="0.848485" y="0.848485" />
+                            <point x="0.5" y="0.984848" />
+                            <point x="0.151515" y="0.848485" />
+                            <point x="0.0151515" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="galaxy" sid="446719528609296">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581357444923469" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500593" original-source="C:\Users\hanif\Downloads\galaxy.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="buttonremovebgpreview" sid="571962080814810">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="307542667495730" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\hanif\Downloads\button-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.361111" y="0.361111" />
+                            <point x="0.5" y="0.280556" />
+                            <point x="0.658333" y="0.341667" />
+                            <point x="0.716667" y="0.5" />
+                            <point x="0.652778" y="0.652778" />
+                            <point x="0.5" y="0.713889" />
+                            <point x="0.355556" y="0.644444" />
+                            <point x="0.305556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="981770697921745">
+            <plugin id="Touch" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>game 1.xml</layout>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="73" />
+        <global-instance type="Function" uid="75" />
+        <global-instance type="Touch" uid="175">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

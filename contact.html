@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 5px; /* Mengurangi jarak antar item */
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #111;
+            color: white;
+            padding: 20px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .profile h2 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a i {
+            margin-right: 10px;
+        }
+
+        footer {
+            margin-top: 10px; /* Mengurangi margin atas footer */
+            font-size: 22px;
+            text-align: center;
+            background-color: #800020;
+        }
+
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .contact {
+            text-align: left;
+        }
+
+        .contact h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .info-item i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .contact-form {
+            width: 50%;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form form input,
+        .contact-form form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact-form form button {
+            padding: 10px;
+            border: none;
+            background-color: #111;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-form form button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="foto_profile.png" alt="Profile Picture">
+            <h2>Muhammad Aulia Rahman</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/maulia.rahman.1420?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aauliarhmn_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/DeathNo46145706?t=pFdA8w8pWZ1g4fwjyoQ2Qw&s=09"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file"></i> Resume</a></li>
+                <li><a href="portofolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li> <!-- Menambahkan Contact -->
+            </ul>
+        </nav>
+        <footer>
+            <p>© Copyright Muhammad Aulia Rahman</p>
+        </footer>
+    </div>
+
+        <div class="content">
+            <section class="contact">
+                <h1>Contact</h1>
+                <p>Alamat yang mungkin bisa menunjukkan keberadaan saya.</p>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location:</h4>
+                        <p>Wanaherang, Gunung Putri, Jawa Barat 16965</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>nurfadhilahanisa88@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call:</h4>
+                        <p>0895701690909</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.93675890404!2d106.78444628605162!3d-6.368298227979079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699bbfb5ecce6b%3A0xa7777a907d43d7b5!2sGunung%20Putri%2C%20Bogor%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1618300580809!5m2!1sen!2sid"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

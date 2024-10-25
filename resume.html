@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            padding-top: 30px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile h2 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 5px; /* Mengurangi jarak antar item */
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        footer {
+            margin-top: 10px; /* Mengurangi margin atas footer */
+            font-size: 22px;
+            text-align: center;
+            background-color: #800020;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+        }
+
+        .bg-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            filter: brightness(50%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        .typing {
+            border-right: 2px solid #61dafb; /* Cursor effect */
+            white-space: nowrap; /* Prevent text wrapping */
+            overflow: hidden; /* Hide text that overflows */
+            animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
+            font-size: 2.5rem; /* Ukuran font */
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Resume styling */
+        .resume-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .resume-left, .resume-right {
+            width: 48%;
+        }
+
+        .resume-left {
+            border-right: 2px solid #3498db;
+            padding-right: 20px;
+        }
+
+        .resume-right {
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        .timeline-item h3 {
+            font-size: 20px;
+            color: black;
+        }
+
+        .timeline-item span {
+           
+            color: #2c3e50;
+            font-size: 14px;
+            padding: 3px 7px;
+            border-radius: 4px;
+        }
+
+        .timeline-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            color:black;
+        }
+
+        .timeline-item ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .timeline-item ul li {
+            font-size: 16px;
+            color: #1e4165;
+        }
+        .education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.education-table td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.education-table td img {
+    width: 170px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-table td:first-child {
+    width: 60%; /* Kolom kiri untuk teks */
+}
+
+.education-table td:last-child {
+    width: 40%; /* Kolom kanan untuk gambar */
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .education-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .education-table td img {
+        width: 80%; /* Gambar lebih kecil di layar kecil */
+        margin-top: 20px;
+    }
+}
+        @keyframes blink {
+            50% {
+                border-color: transparent; /* Make cursor invisible */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="profile">
+            <img src="foto_profile.png" alt="Profile Picture">
+            <h2>Muhammad Aulia Rahman</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/maulia.rahman.1420?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aauliarhmn_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/DeathNo46145706?t=pFdA8w8pWZ1g4fwjyoQ2Qw&s=09"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="resume.html"><i class="fas fa-file"></i> Resume</a></li>
+                <li><a href="portofolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li> <!-- Menambahkan Contact -->
+            </ul>
+        </nav>
+        <footer>
+            <p>© Copyright Muhammad Aulia Rahman</p>
+        </footer>
+    </div>
+
+    <div class="main-content">
+        <section id="home">
+            <div class="container">
+                <img src="gunung.jpg" alt="Background Image" class="bg-image">
+                <h2 style="text-align: center;">Resume</h2>
+                <!-- Resume Section -->
+                <div class="resume-section">
+                    <!-- Left Column (Education, Skills) -->
+                    
+                        <table class="education-table">
+                            <tr>
+                                <!-- Kolom Kiri: SDN Klapanunggal 04 -->
+                                <td>
+                                    <h3>SDN Klapanunggal 04</h3>
+                                    <p><strong>Periode:</strong> 2013 - 2019</p>
+                                    <ul>
+                                        <li>Completed elementary education with strong academic performance</li>
+                                        <li>Won 2nd place twice in O2SN Chess Competition</li>
+                                    </ul>
+                                </td>
+                                <!-- Kolom Kanan: Gambar SDN -->
+                                <td>
+                                    <img src="sdn.jpeg" alt="SDN Klapanunggal 04" class="school-image">
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Kolom Kiri: SMP PGRI KLAPANUNGGAL -->
+                                <td>
+                                    <h3>SMP PGRI KLAPANUNGGAL</h3>
+                                    <p><strong>Periode:</strong> 2019 - 2022</p>
+                                    <ul>
+                                        <li>Graduated with honors</li>
+                                        <li>Involved in extracurricular activities</li>
+                                    </ul>
+                                </td>
+                                <!-- Kolom Kanan: Gambar SMP -->
+                                <td>
+                                    <img src="PGRI.jpg" alt="SMP PGRI KLAPANUNGGAL" class="school-image">
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Kolom Kiri: SMK BINA MANDIRI MULTIMEDIA -->
+                                <td>
+                                    <h3>SMK Bina Mandiri Multimedia</h3>
+                                    <p><strong>Periode:</strong> 2022 - Now</p>
+                                    <ul>
+                                        <li>Majoring in Multimedia</li>
+                                    </ul>
+                                </td>
+                                <!-- Kolom Kanan: Gambar SMK -->
+                                <td>
+                                    <img src="SMK.jpg" alt="SMK Bina Mandiri Multimedia" class="school-image">
+                                </td>
+                            </tr>
+                        </table>
+            </div>
+        </section>
+        <!-- Tambahkan section untuk About, Resume, Portfolio, Contact sesuai kebutuhan -->
+    </div>
+
+    
+</body>
+</html>
